@@ -21,17 +21,6 @@ On the command line in this directory run:
 
 Served locally at: http://localhost:8080/
 
-# Currently hosted on Firebase
-https://cheers-to-beers.firebaseapp.com/
-
-NOTE: This will replace what is currently being served on Firebase
-To update build:
-```
-  npm ci
-  npm run build
-  firebase deploy
-```
-
 
 # Objectives met (some are outside of test requirements)
 * Created single page application
