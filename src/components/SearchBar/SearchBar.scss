@@ -1,0 +1,78 @@
+.punkAPI {
+  display: block;
+  justify-content: center;
+}
+
+.pages button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 0px 5px #ccc;
+  outline: none;
+  margin: 10px;
+  width: 223px;
+}
+
+.beerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  .beerResults {
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 50px;
+    margin-bottom: 20px;
+    flex: 1;
+    object-fit: contain;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #00afdb;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 0px 5px #ccc;
+  outline: none;
+  margin: 10px;
+  width: 200px;
+}
+
+@media (max-width: 1024px) {
+  .beerContainer {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .beerContainer {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .beerContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .punkAPI {
+    display: block;
+  }
+}
