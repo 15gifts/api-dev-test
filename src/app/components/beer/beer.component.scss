@@ -1,0 +1,16 @@
+.beer {
+    text-align: center;
+    width: 300px;
+
+    &:hover {
+        outline: 1px solid black;
+    }
+
+    h3 {
+        
+    }
+
+    img {
+        max-width: 100px;
+    }
+}

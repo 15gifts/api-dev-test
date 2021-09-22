@@ -1,0 +1,8 @@
+<h1>Basket</h1>
+<a routerLink="/">Go back</a>
+<p *ngIf="basket.length === 0">Basket is empty</p>
+<div class="beers">
+    <div *ngFor="let beer of basket">
+        <app-beer [beer]="beer" (click)="onRemoveFromBasket(beer)"></app-beer>
+    </div>
+</div>

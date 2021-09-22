@@ -1,0 +1,11 @@
+<h1>Beers</h1>
+
+Search <input type="text" (keyup)="search($event)" placeholder="Type...">
+
+<a routerLink="basket">Go to basket</a>
+
+<div class="beers">
+    <div *ngFor="let beer of beers">
+        <app-beer [beer]=beer (click)="onAddToBasket(beer)"></app-beer>
+    </div>
+</div>
