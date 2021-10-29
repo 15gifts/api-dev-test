@@ -1,0 +1,6 @@
+@tailwind base;
+html {
+	margin: auto
+}
+@tailwind components;
+@tailwind utilities;
