@@ -1,9 +1,9 @@
-
 import { Beer } from "../lib/types";
-import { BeerList } from "./BeerList";
+import { BeerProduct } from "./BeerProduct";
 
 interface IBeersProps {
   beers: Beer[];
+  addToCart: (beer: Beer) => void;
 }
 export const compareName = (beerA: Beer, beerB: Beer) => {
   const a = beerA.name.toLowerCase();
@@ -17,14 +17,20 @@ export const compareName = (beerA: Beer, beerB: Beer) => {
   return 0;
 };
 
-export const Beers = ({ beers }: IBeersProps) => {
+export const BeersList = ({ beers, addToCart }: IBeersProps) => {
   return (
     <div className="flex flex-wrap justify-between">
       {beers.length === 0
         ? "sorry could not find what you were looking for"
         : beers
             .sort(compareName)
-            .map((beer) => <BeerList key={beer.id} beer={beer} />)}
+            .map((beer) => (
+              <BeerProduct
+                key={beer.id}
+                beer={beer}
+                handleAddToCart={addToCart}
+              />
+            ))}
     </div>
   );
 };

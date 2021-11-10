@@ -37,7 +37,7 @@ export type Beer = {
   first_brewed: string;
   food_pairing: string[];
   ibu: number;
-  id: number;
+  id: string;
   image_url: string | null;
   ingredients: {
     hops: Hop[];
@@ -56,4 +56,8 @@ export type Beer = {
   target_fg: number;
   target_og: number;
   volume: Volume;
+};
+
+export type CartItem = {
+  cartItem: Beer
 };

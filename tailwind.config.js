@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         lightgrey: "#f6f3fd",
+        darkgrey: "#242424",
       },
     },
   },
