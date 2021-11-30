@@ -1,0 +1,61 @@
+.Content-header {
+  margin: auto;
+ text-align: center;
+}
+
+#results{
+   font-weight: 600;
+   color: white;
+}
+
+#inputs{
+  display: grid;
+}
+.stocklogo {
+  padding: 1vw;
+}
+
+#container {
+  height: 100vh;
+}
+
+#themain {
+  padding: 4vw;
+}
+
+#myCard {
+  border-width: 2px;
+  max-width: 100% !important;
+  border-radius: 2vw;
+}
+
+.heads {
+  font-family: "Rowdies", cursive;
+  font-weight: 500;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+}
+
+.card{
+  display: inline;
+  margin-top: 4vw;
+    border-width: 2px;
+    margin-right: 2vw;
+    margin-left: 3vw;
+}
+.card-body{
+  text-align: center;
+}
+.list-group{
+  margin: auto;
+}
+
+#listc{
+border-radius: 2vw;
+}
+
+#beerimg{
+  width: 10vw;
+  background: white;
+  margin: auto;
+}
