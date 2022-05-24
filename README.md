@@ -1,3 +1,6 @@
+# How to Run
+to run you need to first run the backend api which recieves and converts the data from the cocktails db api, to do this you need to run poetry install to install the dependencies for the project, after that you just have to run the run file to set up the api server, after that you will be able to make calls to it to recieve data
+
 # javascript-api-test
 Test for Front end developer candidates. When you start the test, create a branch off of master that you will name after you and when you are done create a pull request assigned to Clara Grant or Dean Pugh. If you can't create a Pull Request please add your project in a zip folder and send it to use via email. Good luck!
 
